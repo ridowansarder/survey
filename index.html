@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridwan's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Ridwan's Survey Form</h1>
+    <p id="description">Complete the survey or die</P>
+    <form id="survey-form">
+      <fieldset><label for="name" class="strong" id="name-label">Naam Lekh: <input id="name" type="text" required  placeholder="eg:Ridowan Sarder"></label>
+      <label id="email-label" for="email" class="strong">Email De: <input id="email" type="email" required placeholder="eg:ridwan@gmail.com"></label>
+      <label for="number" class="strong" id="number-label">Boyosh Koto Tor? <input id="number" type="number" min="12" max="120" placeholder="eg:21"></label>
+      <label class="strong" for="dropdown"><legend>Tui Korish Ki?</legend>
+        <select id="dropdown">
+          <option>Ekta bachai kor</option>
+          <option>Ghumai</option>
+          <option>Tor matha kori</option>
+          <option>Tore bolbo keno</option>
+          <option>Bolle ki ami fas-taha pabo?</option>
+       </select>
+      </label></fieldset><hr>
+      <label for="yes"><legend><strong>Do you like Ridwan's Projects?</strong></legend><br>
+        <input type="radio" id="yes" name="yes-no" class="inline" value="yes">Saying 'Yes' because I don't want to die</label>
+      </label>
+      <label for="no"><input id="no" type="radio" name="yes-no" class="inline" value="no">No, I want to get killed by Ridwan.<hr>
+      <label><legend><strong>Ridwan er kon jinish valo lage?</strong></legend>
+        <select>
+          <option>Ekta beche ne</option>
+          <option>Ridwan er shobkisu</option>
+          <option>Kisui na</option>
+          <option>Ridwan cdi</option>
+        </select>
+      </label><br><hr>
+      <label><legend><strong>Social Media te Ridwan ke Follow Korosh?</strong></legend><br>
+        <input type="radio" name="follow" class="inline" value="aage">Onek aage thekei kortesi.
+      </label>
+      <label>
+        <input type="radio" name="follow" class="inline" value="ekhon">Ekhoni korbo, mairenna please.
+      </label>
+      <label>
+        <input type="radio" name="follow" class="inline" value="lol">Jibonew korbona, maramari lagbi?
+      </label><hr>
+      <label><input type="checkbox" class="inline" value="fun">The survey was fun.</label>
+      <label><input type="checkbox" class="inline" value="donno">Mixed feelings.</label>
+      <label><strong>Extra kichu bolte chash?</strong><textarea placeholder="Comment korte parosh monmoto.."></textarea></label>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
